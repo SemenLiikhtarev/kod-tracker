@@ -1,0 +1,19 @@
+{
+  "name": "kod-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "КОД (Конвейер Обработки Данных) — дашборд-трекер для конвейерной обработки данных",
+  "scripts": {
+    "setup": "npm --prefix web install",
+    "dev": "node scripts/dev.js",
+    "dev:server": "node server/src/index.js",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "node scripts/start.js",
+    "test": "node --test server/tests/pipeline.test.js",
+    "seed": "node server/src/seed.js --reset"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
