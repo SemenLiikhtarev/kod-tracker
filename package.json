@@ -4,7 +4,8 @@
   "private": true,
   "description": "КОД (Конвейер Обработки Данных) — дашборд-трекер для конвейерной обработки данных",
   "scripts": {
-    "setup": "npm --prefix web install",
+    "setup": "npm --prefix web install --include=dev",
+    "postinstall": "npm run setup",
     "dev": "node scripts/dev.js",
     "dev:server": "node server/src/index.js",
     "dev:web": "npm --prefix web run dev",
