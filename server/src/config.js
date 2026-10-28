@@ -2,7 +2,7 @@ const path = require("node:path");
 
 const config = {
   port: Number(process.env.PORT || 8000),
-  host: process.env.HOST || "127.0.0.1",
+  host: process.env.HOST || "0.0.0.0",
   dbPath: process.env.DB_PATH || path.join(__dirname, "..", "data", "kod.sqlite"),
   secret: process.env.KOD_SECRET || "kod-dev-secret-change-me",
   tokenTtlHours: 12,
