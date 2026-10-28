@@ -1,4 +1,4 @@
-# Собирает фронтенд и запускает backend, который отдаёт и API, и готовый UI (порт 8000).
+// Собирает фронтенд и запускает backend, который отдаёт и API, и готовый UI (порт 8000).
 const { spawnSync } = require("node:child_process");
 const path = require("node:path");
 
